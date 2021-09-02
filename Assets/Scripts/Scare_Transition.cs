@@ -14,11 +14,11 @@ public class Scare_Transition : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if(isAnimating == true)
         {
-            anim.SetBool("isJumpScared", false);
+            anim.SetTrigger("isJumpScared");
             isAnimating = false;
         }
     }
@@ -27,7 +27,8 @@ public class Scare_Transition : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            anim.SetBool("isJumpScared", true);
+            anim.SetInteger("jumpScareIndex", Random.Range(0,3));
+            anim.SetTrigger("isJumpScared");
             isAnimating = true;
         }
     }
