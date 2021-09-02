@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Wall_Lerp : MonoBehaviour
 {
@@ -17,10 +18,15 @@ public class Wall_Lerp : MonoBehaviour
 
     public float wallGrowth;                                 // Used to grow the walls by an amount specified by user
 
+    public float countDown;
+    private float resetcountDown;
+    [SerializeField] Text countDownText;
+
     // Start is called before the first frame update
     void Start()
     {
         StartLerping();
+        resetcountDown = countDown;
         walls = GameObject.FindGameObjectsWithTag("wall");
     }
 
@@ -32,6 +38,7 @@ public class Wall_Lerp : MonoBehaviour
             shouldLerp = true;
             timer = true;
         }
+
         if (timer)
         {
             growTime -= 1 * Time.deltaTime;
@@ -42,6 +49,16 @@ public class Wall_Lerp : MonoBehaviour
                 timer = false;
                 growTime = resetGrowTime;
             }
+        }
+
+        countDown -= 1 * Time.deltaTime;
+        countDownText.text = countDown.ToString("0");
+
+        if (countDown <= 0)
+        {
+            shouldLerp = true;
+            timer = true;
+            countDown = resetcountDown; 
         }
     }
 
@@ -56,9 +73,9 @@ public class Wall_Lerp : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if(other.tag == ("scare trigger"))
         {
             shouldLerp = true;
             timer = true;
