@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Wall_Lerp : MonoBehaviour
 {
+    public static int wallTimeCheck = 0;
+
     public GameObject[] walls;                               // Array of all the walls to be changed
     GameObject[] propMoveScripts;
 
@@ -43,6 +45,7 @@ public class Wall_Lerp : MonoBehaviour
                 shouldLerp = false;
                 timer = false;
                 growTime = resetGrowTime;
+                wallTimeCheck++;
             }
         }
 

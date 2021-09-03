@@ -135,8 +135,10 @@ GameObject:
   - component: {fileID: 423245878}
   - component: {fileID: 423245877}
   - component: {fileID: 423245876}
+  - component: {fileID: 423245880}
+  - component: {fileID: 423245881}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: LoseScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -226,6 +228,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &423245880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423245875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 749a7fd2da34ab6418925d26af1aa3d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &423245881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423245875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f14f50d6293288d48b740dccfa71148d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &899424564
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,7 +369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2732396, y: 0.42957282}
   m_AnchorMax: {x: 0.7564366, y: 0.93490124}
-  m_AnchoredPosition: {x: -0.50001526, y: -6.2999954}
+  m_AnchoredPosition: {x: -0.5000305, y: -6.2999954}
   m_SizeDelta: {x: 33.5317, y: 0.8697014}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &953569266
@@ -423,7 +449,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.39236733, y: 0.21057282}
   m_AnchorMax: {x: 0.574, y: 0.29829127}
-  m_AnchoredPosition: {x: 1.9770126, y: 0.45739746}
+  m_AnchoredPosition: {x: 1.9770203, y: 0.45739746}
   m_SizeDelta: {x: -2.554, y: 21.4622}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1070577876
@@ -469,7 +495,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1070577877}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 423245881}
+        m_TargetAssemblyTypeName: LoseScreen, Assembly-CSharp
+        m_MethodName: MainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1070577877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,7 +627,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1128588134}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 423245881}
+        m_TargetAssemblyTypeName: LoseScreen, Assembly-CSharp
+        m_MethodName: ReplayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1128588134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -756,7 +806,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3938753, y: 0.10129128}
   m_AnchorMax: {x: 0.5701542, y: 0.20085439}
-  m_AnchoredPosition: {x: 3.4172134, y: -1.0391998}
+  m_AnchoredPosition: {x: 3.4172058, y: -1.0391998}
   m_SizeDelta: {x: 2.015, y: 17.5996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1375216015
@@ -802,7 +852,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1375216016}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 423245881}
+        m_TargetAssemblyTypeName: LoseScreen, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1375216016
 MonoBehaviour:
   m_ObjectHideFlags: 0

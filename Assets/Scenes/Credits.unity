@@ -297,8 +297,9 @@ GameObject:
   - component: {fileID: 748009519}
   - component: {fileID: 748009518}
   - component: {fileID: 748009517}
+  - component: {fileID: 748009521}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CreditsScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -387,6 +388,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &748009521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748009516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 898a90540fd02a94c812d7060f141293, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &816147554
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,7 +514,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.019749999, y: 0.036000002}
   m_AnchorMax: {x: 0.18200001, y: 0.117563106}
-  m_AnchoredPosition: {x: 0.6598511, y: 0.709198}
+  m_AnchoredPosition: {x: 0.6599121, y: 0.709198}
   m_SizeDelta: {x: -0.32039642, y: 17.4184}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &873193363
@@ -547,7 +560,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 873193364}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 748009521}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: CreditsBack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &873193364
 MonoBehaviour:
   m_ObjectHideFlags: 0
