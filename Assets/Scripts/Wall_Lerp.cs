@@ -34,18 +34,6 @@ public class Wall_Lerp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space"))
-        {
-            shouldLerp = true;
-            timer = true;
-            propMoveScripts = GameObject.FindGameObjectsWithTag("prop");
-            foreach(GameObject s in propMoveScripts)
-            {
-                s.GetComponent<Prop_Move>().StartPropMove();
-            }
-
-        }
-
         if (timer)
         {
             growTime -= 1 * Time.deltaTime;
@@ -86,6 +74,11 @@ public class Wall_Lerp : MonoBehaviour
         {
             shouldLerp = true;
             timer = true;
+            propMoveScripts = GameObject.FindGameObjectsWithTag("prop");
+            foreach (GameObject s in propMoveScripts)
+            {
+                s.GetComponent<Prop_Move>().StartPropMove();
+            }
         }
     }
 
