@@ -148,17 +148,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136720109}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1982248606}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.305, y: 0.2478523}
-  m_AnchorMax: {x: 0.7215456, y: 0.6195773}
-  m_AnchoredPosition: {x: -0.1000061, y: 0.30000305}
-  m_SizeDelta: {x: -1.7799988, y: -4.015297}
+  m_AnchorMin: {x: 0.26598954, y: 0.3292083}
+  m_AnchorMax: {x: 0.7724289, y: 0.6522887}
+  m_AnchoredPosition: {x: -0.1000061, y: 0.32588196}
+  m_SizeDelta: {x: -1.78, y: -4.0670013}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &136720111
 MonoBehaviour:
@@ -184,7 +184,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -195,16 +195,16 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Use WASD to navigate through the maze.
 
-    
 
-    There will be riddles
-    scattered throughout. Answering correctly will guide you to the right path, but
-    if you pick the wrong answer, dread will await you.
 
-    
+    There will be riddles scattered
+    throughout. Answering correctly will guide you to the right path, but if you
+    pick the wrong answer, dread will await you.
 
-    Over time, the
-    walls will close in on you. Make it out before they crush you.'
+
+
+    Over time, the walls will
+    close in on you. Make it out before they crush you.'
 --- !u!222 &136720112
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -377,10 +377,10 @@ RectTransform:
   m_Father: {fileID: 1982248606}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015259, y: -11.268295}
-  m_SizeDelta: {x: 1053.2, y: 434.1366}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 1, y: 0.0010070801}
+  m_SizeDelta: {x: 29.199951, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &405127960
 MonoBehaviour:
@@ -628,8 +628,8 @@ RectTransform:
   m_Father: {fileID: 1982248606}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.39040408, y: 0.6522887}
-  m_AnchorMax: {x: 0.59400004, y: 0.91314775}
+  m_AnchorMin: {x: 0.3937963, y: 0.7005335}
+  m_AnchorMax: {x: 0.59739226, y: 0.9613926}
   m_AnchoredPosition: {x: -0.000030517578, y: 1.2371979}
   m_SizeDelta: {x: 238, y: 8.525501}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -659,7 +659,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 81
+    m_MaxSize: 114
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
