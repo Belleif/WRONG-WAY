@@ -6,6 +6,7 @@ TagManager:
   tags:
   - wall
   - scare trigger
+  - prop
   layers:
   - Default
   - TransparentFX

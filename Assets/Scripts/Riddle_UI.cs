@@ -23,7 +23,6 @@ public class Riddle_UI : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            Debug.Log("box has entered the cube");
             textElement.gameObject.SetActive(true);
         } 
     }

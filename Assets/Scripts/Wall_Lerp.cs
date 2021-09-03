@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Wall_Lerp : MonoBehaviour
 {
     public GameObject[] walls;                               // Array of all the walls to be changed
+    GameObject[] propMoveScripts;
 
     private bool shouldLerp = false;
     private bool timer = false;
@@ -37,6 +38,12 @@ public class Wall_Lerp : MonoBehaviour
         {
             shouldLerp = true;
             timer = true;
+            propMoveScripts = GameObject.FindGameObjectsWithTag("prop");
+            foreach(GameObject s in propMoveScripts)
+            {
+                s.GetComponent<Prop_Move>().StartPropMove();
+            }
+
         }
 
         if (timer)
